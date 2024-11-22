@@ -1,0 +1,180 @@
+/* General Layout and Styling */
+.a-tag, .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  font-weight: 300;
+}
+.a-tag {
+  width: 180px;
+  height: 45px;
+  background-color: #F8669E;
+  text-decoration: none;
+}
+.icon-box {
+  width: 250px;
+  height: 120px;
+  background-color: #F8669E;
+  margin-right: 15px;
+}
+.clr { color: #F8669E; }
+.bg-clr { background-color: #F8669E; }
+
+/* Background & Section Styles */
+.background-expo, .background-pList {
+  background-image: linear-gradient(to right, rgba(29, 86, 255, 0.8), rgba(200, 63, 116, 0.8)), url(./images/Background-image.jpeg);
+  background-position: center top;
+  background-size: cover;
+}
+.section div { margin-top: 90px; }
+.ftr-bg { background-color: #312e81; }
+
+/* Header & Navigation */
+.dark-nav {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.dark-nav-list { font-size: 12px; font-weight: lighter; }
+.nav-item { font-weight: bolder; }
+
+/* Typography */
+.head { font-weight: 500; font-size: 70px; }
+.pink { color: #ff4081; }
+.event-section { font-size: larger; color: #F8669E; font-weight: bold; }
+.h5 { color: white; }
+
+/* Timer Styles */
+.timer {
+  color: white;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+}
+.countdown-item { text-align: center; }
+.time { display: block; font-weight: bold; font-size: 50px; }
+.label { display: block; font-size: 18px; margin-top: 5px; }
+
+/* Card & Event Details */
+.card {
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card-icon { font-size: 40px; }
+.card-title { font-size: 20px; margin-top: 20px; }
+.card-text { font-size: 14px; margin: 20px 0; }
+.learn-more { color: #F8669E; font-weight: bold; }
+
+/* Conference Details */
+.text-section .discover-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.one, .two, .three {
+  width: 300px;
+  height: 300px;
+}
+.one { height: 400px; }
+
+/* Stats Section */
+.stats-section {
+  text-align: center;
+}
+.stats-section h2 { font-size: 50px; }
+.stats-section p { font-size: large; color: #999; }
+
+/* Event Conference Organisation */
+.event-details p { margin: 5px 0 0; }
+.round-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.speaker-info .speaker-name {
+  color: #ff4081;
+  font-weight: bold;
+}
+.timing { width: 80%; padding: 10px; }
+.location { font-size: 50px; }
+
+/* Featured Speaker */
+.speak-1, .speak-6, .speak-2, .speak-3, .speak-4, .speak-5 {
+  height: 300px;
+  width: 300px;
+}
+.speak-1, .speak-6 { height: 400px; width: 300px; }
+
+/* Event Gallery */
+.event-gallery { width: 400px; max-width: 100%; }
+
+/* Partners */
+.partners-img {
+  width: 260px;
+  height: 90px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+/* Product List */
+.product-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.product-card img, .thumbnail-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.product-name { font-weight: bold; color: #2c3e50; margin-bottom: 4px; }
+.product-date { color: #7f8c8d; font-size: 0.9em; }
+.recent-products-title {
+  font-weight: bold;
+  color: #2c3e50;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+.social-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.social-facebook, .social-twitter, .social-instagram, .social-linkedin {
+  text-decoration: none;
+  background-color: #F8669E;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.all-products th, #productTableBody td {
+  border: 1px solid rgb(92, 92, 92);
+  padding: 8px;
+  text-align: center;
+}
+
+/* Forms & Buttons */
+button { margin: 5px; padding: 5px 10px; cursor: pointer; }
+.form-container { margin-top: 20px; }
+.img-fluid {
+  width: 70px;
+  height: 70px;
+}
