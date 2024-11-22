@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Added axios import
 import { useSearchParams, useNavigate } from 'react-router-dom';
+import { ServerUrl } from '../reusables/ServerUrl';
 
 function Update() {
     const [product, setProduct] = useState({
@@ -19,7 +20,7 @@ function Update() {
     useEffect(() => {
         if (productId) {
             axios
-                .get(`http://localhost:5000/api/products/${productId}`)
+                .get(`${ServerUrl}/${productId}`)
                 .then((response) => setProduct(response.data))
                 .catch((error) => console.error('Error fetching product:', error));
         }

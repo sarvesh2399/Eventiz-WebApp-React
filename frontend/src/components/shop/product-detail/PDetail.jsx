@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import axios from 'axios';  // Added axios import
+import { ServerUrl } from '../../reusables/ServerUrl';
 
 function PDetail() {
     const [product, setProduct] = useState(null);
@@ -17,7 +18,7 @@ function PDetail() {
         }
 
         // Updated Start: Replaced fetch with axios
-        axios.get(`http://localhost:5000/api/products/${productId}`)
+        axios.get(`${ServerUrl}/${productId}`)
             .then(response => {
                 setProduct(response.data);
                 setMainImage(response.data.product_image); // Set main image to product's main image

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'; // Added axios import
+import { ServerUrl } from '../../reusables/ServerUrl';
+// import { BASE_URL } from ".\reusables\serverUrl.js";
+
 
 function ProductList() {
     const [products, setProducts] = useState([]);
@@ -11,7 +14,7 @@ function ProductList() {
     // Function to fetch products from the server
     const fetchProducts = (page) => {
         // Replaced fetch with axios
-        axios.get(`http://localhost:5000/api/products?page=${page}&limit=${itemsPerPage}`)
+        axios.get(`${ServerUrl}?page=${page}&limit=${itemsPerPage}`)
             .then((response) => {
                 setProducts(response.data.products); // Update the products list
                 setTotalPages(Math.ceil(response.data.totalCount / itemsPerPage)); // Update total pages

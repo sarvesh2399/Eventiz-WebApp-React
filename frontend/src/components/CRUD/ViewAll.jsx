@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Added axios import
 import { Link } from 'react-router-dom';
+import { ServerUrl } from '../reusables/ServerUrl';
 
 function ViewAll() {
     const [products, setProducts] = useState([]);
@@ -14,7 +15,7 @@ function ViewAll() {
     const fetchProducts = async (page) => {
         try {
             const response = await axios.get(
-                `http://localhost:5000/api/products?page=${page}&limit=${itemsPerPage}`
+                `${ServerUrl}?page=${page}&limit=${itemsPerPage}`
             );
             setProducts(response.data.products); // Extract products from API response
             setTotalPages(Math.ceil(response.data.totalCount / itemsPerPage));
