@@ -64,7 +64,7 @@ function ViewAll() {
 
             {/* Show table if products exist */}
             {products.length > 0 ? (
-                <div>
+                <div className='table-responsive'>
                     <table className="table mt-3">
                         <thead>
                             <tr className="all-products">
