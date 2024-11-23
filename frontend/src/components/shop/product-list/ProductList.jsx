@@ -14,7 +14,7 @@ function ProductList() {
     // Function to fetch products from the server
     const fetchProducts = (page) => {
         // Replaced fetch with axios
-        axios.get(`${ServerUrl}?page=${page}&limit=${itemsPerPage}`)
+        axios.get(`${ServerUrl}/products?page=${page}&limit=${itemsPerPage}`)
             .then((response) => {
                 setProducts(response.data.products); // Update the products list
                 setTotalPages(Math.ceil(response.data.totalCount / itemsPerPage)); // Update total pages

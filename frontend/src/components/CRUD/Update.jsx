@@ -20,7 +20,7 @@ function Update() {
     useEffect(() => {
         if (productId) {
             axios
-                .get(`${ServerUrl}/${productId}`)
+                .get(`${ServerUrl}/products/${productId}`)
                 .then((response) => setProduct(response.data))
                 .catch((error) => console.error('Error fetching product:', error));
         }

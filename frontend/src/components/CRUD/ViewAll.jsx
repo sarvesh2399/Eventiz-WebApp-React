@@ -15,7 +15,7 @@ function ViewAll() {
     const fetchProducts = async (page) => {
         try {
             const response = await axios.get(
-                `${ServerUrl}?page=${page}&limit=${itemsPerPage}`
+                `${ServerUrl}/products?page=${page}&limit=${itemsPerPage}`
             );
             setProducts(response.data.products); // Extract products from API response
             setTotalPages(Math.ceil(response.data.totalCount / itemsPerPage));

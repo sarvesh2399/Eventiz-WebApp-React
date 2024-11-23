@@ -18,7 +18,7 @@ function PDetail() {
         }
 
         // Updated Start: Replaced fetch with axios
-        axios.get(`${ServerUrl}/${productId}`)
+        axios.get(`${ServerUrl}/products/${productId}`)
             .then(response => {
                 setProduct(response.data);
                 setMainImage(response.data.product_image); // Set main image to product's main image

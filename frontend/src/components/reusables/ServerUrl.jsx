@@ -1,3 +1,3 @@
 
 // Centralized server URL
-export const ServerUrl = "http://localhost:5000/api/products";
+export const ServerUrl = "http://localhost:5000/api";

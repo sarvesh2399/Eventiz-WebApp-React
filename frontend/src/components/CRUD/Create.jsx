@@ -18,7 +18,7 @@ function Create() {
 
     // Updated Start
     axios
-      .post(`${ServerUrl}`, {
+      .post(`${ServerUrl}/products`, {
         ...product,
         id: Number(product.id), // Convert ID and Price to numbers
         price: Number(product.price),
