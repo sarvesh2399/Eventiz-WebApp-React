@@ -33,7 +33,7 @@ function Update() {
 
         // Updated Start
         axios
-            .put(`http://localhost:5000/api/products/${productId}`, product, {
+            .put(`${ServerUrl}/products/${productId}`, product, {
                 headers: { 'Content-Type': 'application/json' },
             })
             .then((response) => {

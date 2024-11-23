@@ -41,7 +41,7 @@ function ViewAll() {
     // Updated Start
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/products/${id}`);
+            await axios.delete(`${ServerUrl}/products/${id}`);
             setProducts(products.filter((product) => product.id !== id)); // Update UI
         } catch (err) {
             console.error('Error deleting product:', err);
